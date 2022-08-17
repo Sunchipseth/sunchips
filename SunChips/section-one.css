@@ -1,0 +1,20 @@
+.one img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.mobile img{
+    display: none;
+}
+
+@media screen and (max-width: 525px) {
+    .mobile img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+    .desktop img{
+        display: none;
+    }
+}

@@ -1,0 +1,59 @@
+.five{
+    background-color: #f2f2f2;
+}
+.company-p {
+    text-align: left;
+    font-size: 60px;
+    font-family: 'sunchips';
+    color: #474747;
+    letter-spacing: 1px;
+    margin: 40px 0 0 90px;
+}
+
+.company-discription{
+    margin: 0px 90px 90px 90px;
+}
+.more {
+    display: none;
+}
+button{
+    border: none;
+}
+.myBtn{
+    color: #474747;
+    font-family: 'sunchips';
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.myBtn:hover{
+    color: #919191;
+}
+
+@media screen and (max-width: 900px) {
+    .company-p {
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin: 10px 20px 0 20px;
+        padding-top: 20px;
+    }
+    
+    .company-discription{
+        margin: 0px 50px 10px 50px;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .company-p {
+        font-size: 40px;
+        margin-bottom: 10px;
+        /*   */
+    }
+    .company-discription{
+        margin: 0px 30px 10px 30px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .company-discription{
+        margin: 0px 10px 10px 10px;
+    }
+}

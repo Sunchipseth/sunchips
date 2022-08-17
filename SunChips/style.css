@@ -1,0 +1,40 @@
+@import "nav-bar.css";
+@import "section-one.css";
+@import "section-two.css";
+@import "section-three.css";
+@import "section-four.css";
+@import "section-five.css";
+@import "section-six.css";
+@import "section-seven.css";
+@font-face {
+    font-family: sunchips;
+    src: url(fonts/AMSTER.ttf);
+}
+:root{
+    --light-yellow: #f6e609;
+    --yellow: #f3c017;
+    --nav-text: black;
+    --bg-red: rgb(215,31,59);
+    --bg-red-light: rgb(219, 51, 76);;
+
+    --bg-blue: rgb(39, 39, 85);
+    --bg-blue-light: rgb(51, 51, 110);
+ 
+
+    --bg-yellow: rgb(244, 203, 51);
+    --bg-yellow-light: rgb(231, 194, 60);
+
+    --bg-green: rgb(4,109,53);
+    --bg-green-light: rgb(9, 136, 68);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
+}

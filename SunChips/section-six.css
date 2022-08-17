@@ -1,0 +1,43 @@
+.six{
+    background-color: var(--bg-blue-light);
+}
+.six .company-p{
+    color: white;
+}
+.six .buy{
+    color: white;
+}
+.six .company-p{
+    margin: 0px 90px;
+}
+.six .company-discription{
+    margin: 0px 90px 0 90px;
+}
+.map{
+    margin: 0 5px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .six .company-p {
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin: 0px 50px 10px 50px;
+        padding-top: 20px;
+    }
+    
+    .six .company-discription{
+        margin: 0px 50px 10px 50px;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .six .company-p {
+        font-size: 40px;
+        margin: 0px 30px 10px 30px;
+        /*   */
+    }
+    .six .company-discription{
+        margin: 0px 30px 10px 30px;
+    }
+}

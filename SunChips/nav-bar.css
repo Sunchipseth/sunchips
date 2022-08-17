@@ -1,0 +1,142 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    background-color: var(--light-yellow);
+    position: sticky;
+    top: -2px;
+    z-index: 10;
+    transition: all 300ms ease-in-out;
+    
+}
+
+.logo h1{
+    margin-top: 10px;
+    font-family: 'sunchips';
+    font-size: 30px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    z-index: 0;
+    margin-top: 10px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--nav-text);
+    font-family: 'MarkOT-Bold', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    font-weight:bolder;
+}
+.colapse{
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.colapse div{
+    width: 25px;
+    height: 3px;
+    background-color: var(--nav-text);
+    margin: 5px ;
+    transition: all 0.3s ease;
+}
+.mobile-products{
+    display: none;
+}
+
+@media screen and (max-width: 1058px) {
+
+    .links{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .desktop-products{
+        display: none;
+    }
+    .mobile-products{
+        display: block;
+    }
+    .links{
+        position: absolute;
+        right: 0px;
+        height: 39vh;
+        top: 8vh;
+        background-color: var(--light-yellow);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateY(-120%);
+        transition: transform 0.5s ease-out;
+        
+    }
+    .colapse{
+        margin-right: 20px;
+        display: block;
+    }
+
+.links li{
+    opacity: 0;
+    
+}
+.colapse-active{
+    opacity: 100%;
+    transition: transform 0.5s ease-out;
+    transform: translateY(0%);
+}
+.nActive{
+    opacity: 0%;
+    transition: opacity 0.1s;
+    transition: transform 0.5s ease-out;
+    transform: translateY(-100%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0%;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+}
+
+@media screen and (max-width: 500px) {
+    .logo h1{
+        margin-left: -25px;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+/* Scroll */
+
+.scroll-down nav{
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav{
+
+}

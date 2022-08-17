@@ -1,0 +1,53 @@
+.seven{
+    background-color: var(--bg-yellow);
+
+}
+.seven .company-p,
+.seven .new-p2{
+    color: #474747;   
+}
+input{
+    border: none;
+    appearance: none;
+    background-color: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    height: 40px;
+    outline: none;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    color: #474747;
+    font-family: 'sunchips';
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.seven button{
+    margin: 0 10px;
+    outline: none;
+}
+
+svg{
+    margin-right: 10px;
+}
+.btn{
+    font-family: 'sunchips';
+    letter-spacing: 2px;
+
+}
+.developer{
+    margin-top: 20px;
+}
+.developer:hover{
+    cursor: 'hand';
+}
+@media screen and (max-width: 410px) {
+    input{
+        width: 170px;
+    }
+}
